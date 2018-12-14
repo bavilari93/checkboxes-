@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box; }
+
+html > * {
+  box-sizing: inherit; }
+
+body {
+  background-color: #D1D7DC;
+  font-family: 'Fira Sans', sans-serif; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.input-group {
+  margin: 1rem;
+  width: 40%; }
+  .input-group input[type="radio"] {
+    visibility: hidden; }
+
+label {
+  padding: 12px 30px;
+  width: 100%;
+  display: block;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1); }
+  label:before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border: solid .1rem grey;
+    border-radius: 50%;
+    margin-left: 35%; }
+
+input:checked ~ label {
+  background-color: black;
+  color: white; }
+  input:checked ~ label:before {
+    background-color: #5562eb;
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: -3px -1px; }
+
+/*# sourceMappingURL=style.css.map */
